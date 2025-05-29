@@ -1,0 +1,164 @@
+/* Mejoras Responsive */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .hero.flex {
+    min-height: auto;
+    padding: 4em 0;
+  }
+
+  .service-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Header responsive */
+  header {
+    position: relative;
+    padding: 1em 0;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  nav.navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--cl--1--);
+    padding: 2em;
+    transition: 0.5s ease;
+    z-index: 1000;
+  }
+
+  nav.navigation.active {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  }
+
+  /* Hero section responsive */
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+  }
+
+  .hero-img img {
+    max-height: 250px;
+  }
+
+  /* Service section responsive */
+  .service-cards {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+  }
+
+  .s-card {
+    padding: 0.8em;
+  }
+
+  /* Product section responsive */
+  .product-cards {
+    flex-direction: column;
+  }
+
+  .p-card {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+
+  /* Customer section responsive */
+  .customer-cards {
+    justify-content: center;
+  }
+
+  .c-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 1em;
+  }
+
+  /* Form responsive */
+  .form-container {
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustes para móviles pequeños */
+  h1, h2 {
+    font-size: clamp(28px, 5vw, 40px);
+  }
+
+  .page-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer {
+    text-align: center;
+  }
+
+  footer .media-links {
+    justify-content: center;
+  }
+
+  .links ul {
+    justify-content: center;
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    --cl--1--: #121212;
+    --cl--2--: #ffffff;
+    --cl--5--: #1a1a1a;
+  }
+
+  .s-card,
+  .p-card,
+  .c-card {
+    background: rgba(255, 255, 255, 0.05);
+  }
+} 

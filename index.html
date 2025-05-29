@@ -11,12 +11,12 @@
   <header>
     <div class="logo1"><span>Petfly App</span>
     </div>
-    <nav>
+    <div class="toggleMenu"></div>
+    <nav class="navigation">
       <a href="#cards">¿Que ofrecemos?</a>
       <a href="#info">¿Por qué elegirnos?</a>
       <a href="#subs">Planes</a>
       <a href="#book">Instalar App</a>
-      
     </nav>
     
     
@@ -107,7 +107,7 @@
   <section class="cards" id="cards">
     <div class="card">
       <h3>Tienda</h3>
-      <p><b>Descubre una variedad de   artículos de higiene, snacks y accesorios diseñados para consentir a tu mascota.</b></p>
+      <p><b>Descubre una variedad de   artículos de higiene, snacks y accesorios diseñados para consentir a tu mascota.</b></p>
     </div>
     <div class="card">
       <h3>Chatbot</h3>
@@ -273,50 +273,8 @@
     
   </footer>
 
-
-
-
-
-
-  <script>
-  function toggleAccordion(header) {
-    const content = header.nextElementSibling;
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-  }
-
-  function bookNow() {
-    alert('Booking your pet service!');
-  }
-
-  window.addEventListener('scroll', function() {
-    document.querySelectorAll('.card').forEach(card => {
-      const cardTop = card.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      if (cardTop < windowHeight - 100) {
-        card.classList.add('show');
-      }
-    });
-  });
-
-  
-  const toggleSwitch = document.getElementById('input');
-
-  // Al cargar la página, aplica modo oscuro si estaba activado
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-    toggleSwitch.checked = true;
-  }
-
-  toggleSwitch.addEventListener('change', () => {
-    if (toggleSwitch.checked) {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('darkMode', 'false');
-    }
-  });
-  </script>
+  <script src="slide.js"></script>
+  <script src="js.js"></script>
 
 </body>
 </html>
