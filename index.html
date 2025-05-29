@@ -5,278 +5,189 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petfly App</title>
-  <script src="./js.js" defer></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <div class="logo1"><span>Petfly App</span>
+  <!-- Navigation -->
+  <header class="row container">
+    <div class="logo">
+      <span>Petfly</span> App
     </div>
-    <div class="toggleMenu"></div>
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
     <nav class="navigation">
-      <a href="#cards">¿Que ofrecemos?</a>
-      <a href="#info">¿Por qué elegirnos?</a>
-      <a href="#subs">Planes</a>
-      <a href="#book">Instalar App</a>
+      <ul class="row">
+        <li><a href="#cards">¿Qué ofrecemos?</a></li>
+        <li><a href="#info">¿Por qué elegirnos?</a></li>
+        <li><a href="#subs">Planes</a></li>
+        <li><a href="#book">Instalar App</a></li>
+        <li><a href="https://www.instagram.com/petflypro/" class="page-btn">Contáctanos</a></li>
+      </ul>
     </nav>
-    
-    
-
-    <!-- From Uiverse.io by RiccardoRapelli --> 
-    <label class="switch" id=>
-      <input id="input" type="checkbox" checked="darkTheme" />
-      <div class="slider round">
-        <div class="sun-moon">
-          <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-
-          <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-          <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="50"></circle>
-          </svg>
-        </div>
-        <div class="stars">
-          <svg id="star-1" class="star" viewBox="0 0 20 20">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg id="star-2" class="star" viewBox="0 0 20 20">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg id="star-3" class="star" viewBox="0 0 20 20">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-          <svg id="star-4" class="star" viewBox="0 0 20 20">
-            <path
-              d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
-            ></path>
-          </svg>
-        </div>
-      </div>
-    </label>
-
   </header>
 
+  <!-- Hero Section -->
   <section class="hero" id="inicio">
-    <div class="hero-image">
-      <img src="Imagenes/fondo12.png" alt="Cute Dog">
-    </div>
-    <div class="hero-text">
-      <h4>Happy Pets, Happy Hearts</h4>
-      <h1>Bienvenido a <span>Petfly App</span><br>Tu lugar de <span>Confianza</span></h1>
-      <p>En esta página te contaremos todo lo que tiene <b>Petfly App</b> para ofrecerte.</p>
-      <a href="https://www.instagram.com/petflypro/">
-        <button id="callBtn">Contáctanos</button>
-      </a>
-  </section>
-
-  <section class="cards" id="cards">
-    <div class="card">
-      <h3>Tienda</h3>
-      <p><b>Descubre una variedad de   artículos de higiene, snacks y accesorios diseñados para consentir a tu mascota.</b></p>
-    </div>
-    <div class="card">
-      <h3>Chatbot</h3>
-      <p><b>Tu asesor inteligente para resolver dudas y crear recetas personalizadas para tu perrito.</b></p>
-    </div>
-    <div class="card">
-      <h3>Comunidades</h3>
-      <p><b>Únete a comunidades donde podrás compartir experiencias, consejos y anécdotas sobre el cuidado de tu mejor amigo.</b></p>
-    </div>
-    <div class="card">
-      <h3>Usuario Premium</h3>
-      <p><b>Con la suscripción premium, accede a un chatbot exclusivo y envíos gratis para tus compras.</p>
+    <div class="container flex">
+      <div class="hero-text">
+        <h1>Bienvenido a <span>Petfly App</span></h1>
+        <p>En esta página te contaremos todo lo que tiene <b>Petfly App</b> para ofrecerte.</p>
+        <a href="https://www.instagram.com/petflypro/" class="page-btn">
+          Contáctanos
+        </a>
+      </div>
+      <div class="hero-image">
+        <img src="Imagenes/fondo12.png" alt="Cute Dog">
+      </div>
     </div>
   </section>
 
-  <section>
+  <!-- Services Section -->
+  <section class="services" id="cards">
+    <div class="container">
+      <h2>Nuestros <span>Servicios</span></h2>
+      <div class="service-cards">
+        <div class="s-card">
+          <img src="Imagenes/huellas-de-perro.png" alt="Tienda">
+          <h3>Tienda</h3>
+          <p>Descubre una variedad de artículos de higiene, snacks y accesorios diseñados para consentir a tu mascota.</p>
+        </div>
+        <div class="s-card">
+          <img src="Imagenes/corona (1).png" alt="Chatbot">
+          <h3>Chatbot</h3>
+          <p>Tu asesor inteligente para resolver dudas y crear recetas personalizadas para tu perrito.</p>
+        </div>
+        <div class="s-card">
+          <img src="Imagenes/whatsappf2.png" alt="Comunidades">
+          <h3>Comunidades</h3>
+          <p>Únete a comunidades donde podrás compartir experiencias, consejos y anécdotas sobre el cuidado de tu mejor amigo.</p>
+        </div>
+        <div class="s-card">
+          <img src="Imagenes/instagramf.png" alt="Premium">
+          <h3>Usuario Premium</h3>
+          <p>Con la suscripción premium, accede a un chatbot exclusivo y envíos gratis para tus compras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section">
     <div class="carousel-container">
       <div class="carousel-slide">
-        <div class="carousel-item"><img src="Imagenes/carrusel8.png" alt="Imagen 2"></div>
-        <div class="carousel-item"><img src="Imagenes/carrusel5.png" alt="Imagen 3"></div>
-        <div class="carousel-item"><img src="Imagenes/fondo8.jpg" alt="Imagen 4"></div>
+        <div class="carousel-item"><img src="Imagenes/carrusel8.png" alt="Imagen 1"></div>
+        <div class="carousel-item"><img src="Imagenes/carrusel5.png" alt="Imagen 2"></div>
+        <div class="carousel-item"><img src="Imagenes/fondo8.jpg" alt="Imagen 3"></div>
       </div>
-      <button class="arrow prev">&#10094;</button>
-      <button class="arrow next">&#10095;</button>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
     </div>
-
     <div class="carousel-indicators">
-      <span class="dot active" onclick="showSlide(0)"></span>
-      <span class="dot" onclick="showSlide(1)"></span>
-      <span class="dot" onclick="showSlide(2)"></span>
-      
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </section>
-  
-  <script src="slide.js"></script>
 
+  <!-- Info Section -->
   <section class="info-section" id="info">
-    <div class="info-header">
-      <h4><b>¿Por qué elegir Petfly App?</b></h4>
-      <h2>Petfly App es una aplicación muy completa e innovadora.</h2>
-    </div>
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">¿<b>Petfly App</b> me ayudará a saber más sobre el cuidado de mi canino?</div>
-        <div class="accordion-content">Si, la verdad es que Petfly App contará con una gran red de información en donde podrás enterarte sobre todo tipo de cuidados necesarios para que  
-            tu perro se sienta de maravilla, además de que incluso podrás llevar un control personal de tu canino.
+    <div class="container">
+      <h2>¿Por qué elegir <span>Petfly App</span>?</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">¿Petfly App me ayudará a saber más sobre el cuidado de mi canino?</div>
+          <div class="accordion-content">
+            Sí, Petfly App cuenta con una gran red de información donde podrás enterarte sobre todo tipo de cuidados necesarios para que tu perro se sienta de maravilla.
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">¿Acaso en <b>Petfly App</b> podré comprar su producto estrella?</div>
-        <div class="accordion-content">Si, ya que <b>Petfly</b> cuenta con un apartado de tienda donde no solo podrás comprar nuestro producto estrella "Galletas Armadura Digestiva"
-            sino que además tenemos nuestras variantes como "Patas de Titanio" y "Superalimento", y muchos productos más que están en nuestro catálogo.
-         
+        <div class="accordion-item">
+          <div class="accordion-header">¿Puedo comprar productos en Petfly App?</div>
+          <div class="accordion-content">
+            Sí, contamos con una tienda donde encontrarás nuestros productos estrella como "Galletas Armadura Digestiva", "Patas de Titanio" y "Superalimento".
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-header" onclick="toggleAccordion(this)">¿Que otras cosas tiene <b>Petfly App</b> para ofrecerme?</div>
-        <div class="accordion-content">No te quedes solo con lo que te contamos aquí, ya que esto solo es la punta del iceberg, en <b>Petfly App</b> estamos en constante cambio
-         y tenemos muchas cosas que queremos mostrarles a nuestros queridísimos usuarios así que, ¿que esperas? Pásate a descargar nuestra App.
+        <div class="accordion-item">
+          <div class="accordion-header">¿Qué más ofrece Petfly App?</div>
+          <div class="accordion-content">
+            Estamos en constante evolución con nuevas características y mejoras. ¡Descarga la app para descubrir todo lo que tenemos para ti!
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  
+  <!-- Pricing Section -->
   <section class="pricing-section" id="subs">
-  <div class="pricing-card">
-    <h3>Estandar</h3>
-    <div class="icon">
-      <img src="Imagenes/huellas-de-perro.png" alt="huellas" width="90">
-    </div>
-    <p class="price">Sin Cargo Alguno</p>
-    <p class="price">Gratis<span>/mes</span></p>
-    <button>Empezar ahora</button>
-    <ul>
-      <li>Compras en la App</li> <br>
-      <li>Acceso a la comunidad Petfly</li> <br>
-      <li>Precios de productos estandar</li> <br>
-      <li>Precios de envio estandar</li> <br>
-      <li></li> <br>
-    </ul> 
-    
-  </div>
-
-  <div class="pricing-card-featured">
-    <h3>PetGold</h3>
-    <div class="icon">
-      <img src="Imagenes/corona (1).png" alt="corona" width="90" > 
-    </div>
-    
-    <p class="price">Paga únicamente</p>
-    <p class="price">$55.000<span>/anual</span></p>
-    <button>Empezar ahora</button>
-    <ul>
-      <li>Además de los beneficios estándar:</li> <br>
-      <li>Precios PetGold exclusivos</li> <br> 
-      <li>Cubrimos el envio por compras superiores a $120.000</li> <br>
-      <li>Recetas personalizadas con chat de Bot</li> <br>
-    </ul>
-  </div>
-</section>
-  
-  <section class="section" id="book">
-    <div class="text-content">
-      <h1><b>¿Quiénes</b> somos?</h1>
-      <p>
-        En Petfly, unimos tecnología y amor por los perros para brindar salud, bienestar y cuidado personalizado. Nuestra app ofrece alimentación saludable, asesoría con IA y productos pensados para cada etapa de su vida.
-      </p>
-      <a href="https://www.figma.com/proto/dF9bR1yuqmGMpUGhlSGHSA?node-id=0:1">
-        <button class="cta-button">Descarga la App Ahora</button>
-      </a>
-      
-      <p class="note">
-        Accede a Petfly y conoce todo lo que tenemos para ti y tu peludo.
-      </p>
-    </div>
-
-    <div class="image-content">
-      <img src="Imagenes/celular8.png" alt="App Petfly">
+    <div class="container">
+      <h2>Nuestros <span>Planes</span></h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Estándar</h3>
+          <img src="Imagenes/huellas-de-perro.png" alt="Estándar" class="plan-icon">
+          <div class="price">Gratis</div>
+          <ul>
+            <li>Compras en la App</li>
+            <li>Acceso a la comunidad Petfly</li>
+            <li>Precios de productos estándar</li>
+            <li>Precios de envío estándar</li>
+          </ul>
+          <a href="#" class="page-btn">Empezar ahora</a>
+        </div>
+        <div class="pricing-card featured">
+          <h3>PetGold</h3>
+          <img src="Imagenes/corona (1).png" alt="Premium" class="plan-icon">
+          <div class="price">$55.000<span>/anual</span></div>
+          <ul>
+            <li>Precios PetGold exclusivos</li>
+            <li>Envío gratis en compras +$120.000</li>
+            <li>Recetas personalizadas con chatbot</li>
+            <li>Beneficios exclusivos</li>
+          </ul>
+          <a href="#" class="page-btn">Empezar ahora</a>
+        </div>
+      </div>
     </div>
   </section>
-  
+
+  <!-- App Section -->
+  <section class="app-section" id="book">
+    <div class="container flex">
+      <div class="app-content">
+        <h2>Descarga <span>Petfly App</span></h2>
+        <p>Unimos tecnología y amor por los perros para brindar salud, bienestar y cuidado personalizado. Nuestra app ofrece alimentación saludable, asesoría con IA y productos pensados para cada etapa de su vida.</p>
+        <a href="#" class="page-btn">Descargar Ahora</a>
+      </div>
+      <div class="app-image">
+        <img src="Imagenes/celular8.png" alt="App Petfly">
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <div class="social-icons">
-      <a href="#"><i class="Gmail"></i>
-        <img src="Imagenes/whatsappf2.png" alt="logofooter" width="60">
-      </a>
-      <span>/</span>
-      <a href="#"><i class="Twitter"></i>
-        <img src="Imagenes/twitterf2.png" alt="logofooter" width="70">
-      </a>
-      <span>/</span>
-      <a href="https://www.instagram.com/petflypro/"><i class="Instagram"></i>
-        <img src="Imagenes/instagramf.png" alt="logofooter" width="60">
-      </a>
-      <span>/</span>
-      <a href="#"><i class="Facebook"></i>
-        <img src="Imagenes/facebookf2.png" alt="logofooter" width="40">
-      </a>
-      <span>/</span>
-      <a href="#"><i class="Whatsapp"></i>
-        <img src="Imagenes/gmail.png" alt="logofooter" width="50">
-      </a>
-      <span>/</span>
-      
-      
-    </div>
-
-    <div class="brand">Petfly</div>
-
-    <div class="footer-bottom">
-      <div class="footer-links">
-        <a href="#cards">SERVICIOS</a>
-        <a href="#info">PREGUNTAS FRECUENTES</a>
-        <a href="#subs">PLANES</a>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#"><img src="Imagenes/whatsappf2.png" alt="WhatsApp"></a>
+          <a href="#"><img src="Imagenes/twitterf2.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/petflypro/"><img src="Imagenes/instagramf.png" alt="Instagram"></a>
+          <a href="#"><img src="Imagenes/facebookf2.png" alt="Facebook"></a>
+          <a href="#"><img src="Imagenes/gmail.png" alt="Gmail"></a>
+        </div>
+        <div class="footer-links">
+          <a href="#cards">Servicios</a>
+          <a href="#info">Preguntas Frecuentes</a>
+          <a href="#subs">Planes</a>
+          <a href="https://www.instagram.com/petflypro/">Contáctanos</a>
+          <a href="#inicio">Inicio</a>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Petfly. Todos los derechos reservados.</p>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="https://www.instagram.com/petflypro/">CONTÁCTANOS</a>
-        <a href="#inicio">INICIO</a>
-      </div>
-      
     </div>
-    
   </footer>
 
-  <script src="slide.js"></script>
   <script src="js.js"></script>
-
 </body>
 </html>
